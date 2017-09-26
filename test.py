@@ -18,10 +18,13 @@ image_dic = [
     [120, "Icon-Small-40@3x.png"],
     [29, "Icon-Small.png"],
     [58, "Icon-Small@2x.png"],
-    [87, "Icon-Small@3x.png"]
+    [87, "Icon-Small@3x.png"],
+    [20, "Icon-Small-20.png"],
+    [40, "Icon-Small-20@2x.png"],
+    [60, "Icon-Small-20@3x.png"]
 ]
 
-def create_icon(file_icon = "icon.png"):
+def create_icon(file_icon = "Icon.png"):
     if not os.path.exists("output"): os.mkdir("output")
 
     file_dir = "output/"+time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime(time.time()))
